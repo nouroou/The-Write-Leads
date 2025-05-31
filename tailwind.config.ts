@@ -5,7 +5,8 @@ module.exports = {
         './pages/**/*.{js,ts,jsx,tsx,mdx}', // If using pages router
         './components/**/*.{js,ts,jsx,tsx,mdx}',
         './app/**/*.{js,ts,jsx,tsx,mdx}',    // If using app router
-        './src/**/*.{js,ts,jsx,tsx,mdx}',    // Or if your components are in src
+        './src/**/*.{js,ts,jsx,tsx,mdx}',  // Or if your components are in src
+        './app/globals.css',
     ],
     // prefix: "", // Shadcn UI default is no prefix, usually not needed
     theme: {
@@ -83,8 +84,5 @@ module.exports = {
             },
         },
     },
-    plugins: [
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        require("tailwindcss-animate")
-    ],
+
 }
